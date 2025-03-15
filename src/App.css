@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+
+@layer base {
+   h1{
+    font-size: 50px;
+   }
+}
+
