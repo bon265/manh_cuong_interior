@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+
+@layer base {
+    nav{
+        position: sticky;
+        top: 0;
+    }
+    body{
+        font-family: "barlow";
+        
+    }
+}
+
