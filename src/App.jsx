@@ -9,6 +9,7 @@ import Blogs from './components/layouts/pages/tin_tuc/Blog.jsx';
 import Footer from './components/layouts/Footer/Footer.jsx';
 
 import './App.css'
+import ProductsMenu from './components/utils/products_menu/ProductsMenu.jsx';
 
 
 
@@ -18,6 +19,7 @@ function App() {
   return (
     <>
     <Header  />
+    <ProductsMenu/>
     {/* slide_ảnh */}
     <Routes  >
       <Route path='/' element={<HomePage/>}/>

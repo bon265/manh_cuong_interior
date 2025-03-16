@@ -4,10 +4,10 @@ import logo from '../../../assets/img/logo.png'
 import { Link } from 'react-router-dom';
 import Iphone_menu from './iphone_menu';
 import styles from './style.module.css'
-import Cart from '../../cart/Cart';
+import Cart from '../../utils/cart/Cart';
 const Header = () => {
   // transition duration-200 md:hidden fixed left-[100%]  h-[100vh] w-[50vw] top-0  bg-green-50 opacity-90    justify-between gap-[20px] text-black font-semibold  text-center 
-  let ulStyle = "  md:hidden fixed left-[100%]  h-[100vh] w-[50vw] top-0  bg-green-50 opacity-90    justify-between gap-[20px] text-black font-semibold  text-center " 
+  let ulStyle = "transition-all duration-900 translate-x-[-100%]   delay-1000 md:hidden fixed left-[100%]  h-[100vh] w-[50vw] top-0  bg-green-50 opacity-90    justify-between gap-[20px] text-black font-semibold  text-center " 
   const[topMenu,setTopmenu]=useState(false)
   var liStyle ='relative text-[22px] transition-all  delay-75 hover:scale-110'
 
@@ -33,7 +33,7 @@ const Header = () => {
       </ul>
       {/* nav-bar responsive */}
       {!topMenu && (
-        <Iphone_menu handleChange={handleChange} ulStyle={'transition duration-900 translate-x-[-100%] '+ulStyle} /> ) }
+        <Iphone_menu handleChange={handleChange} ulStyle={ulStyle} /> ) }
       {/* button */}
 
     <div className='mr-5 hidden lg:flex gap-2'>

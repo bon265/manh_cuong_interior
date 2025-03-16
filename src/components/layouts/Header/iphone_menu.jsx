@@ -6,7 +6,7 @@ function Iphone_menu( {ulStyle,handleChange}) {
     return (
        
          <section>
-      <ul className={ ulStyle }   onClick={handleChange} >
+      <ul className={ ulStyle + "z-40" }   onClick={handleChange} >
         <li  className='transition-all   delay-75 mt-5 hover:scale-110'><a href="/">trang chủ</a></li>
         <li className='transition-all   delay-75 mt-5 hover:scale-110' ><a href="/">blogs</a></li>
         <li className='transition-all   delay-75 mt-5 hover:scale-110'><a href="/">liên hệ</a></li>
