@@ -1,0 +1,27 @@
+.menu{
+    position: relative;
+    
+}
+.dropdown{
+    display: none;
+    background: #ffffff;
+    z-index: 40;
+    position: absolute;
+    width: 350%;
+    
+}
+.dropdown li{
+    padding:20px;
+    display: block;
+}
+.dropdown li:hover{
+    background: #ccfdff66;
+    
+}
+
+
+.menu:hover .dropdown{
+    display: block;
+    
+    
+}
